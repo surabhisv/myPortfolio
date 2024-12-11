@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container-row {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    max-width: 600px; 
+    margin-bottom: 50px;
+}
+
+.container1, .container2, .container3 {
+    border: 5px solid black; 
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px; 
+    background-color: #e0f7fa; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.container1:hover, .container2:hover, .container3:hover {
+    transform: scale(1.1);
+}
+
+.container1:hover {
+    background-color: #323132; 
+}
+
+.container2:hover {
+    background-color: #323132; 
+}
+
+.container3:hover {
+    background-color: #323132; 
+}
+
+.container1 i, .container2 i, .container3 i {
+    font-size: 100px; 
+    color: solid black; 
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1:hover i, .container2:hover i, .container3:hover i {
+    color: rgb(244, 219, 219);
+}
