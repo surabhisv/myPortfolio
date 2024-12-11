@@ -1,9 +1,9 @@
 document.getElementById('bioData').addEventListener('click',function(){
     window.location.href="bioData.html";
 });
-document.getElementById('resume').addEventListener('click',function(){
-    window.location.href="resume.pdf";
-});
+// document.getElementById('resume').addEventListener('click',function(){
+//     window.location.href="resume.pdf";
+// });
 document.getElementById('projects').addEventListener('click',function(){
     window.location.href="projects.html";
 });
